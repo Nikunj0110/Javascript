@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Validations</title>
+    <style>
+        body{
+            padding: 20px 60px;
+        }
+        .formdesign{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .formdesign input{
+            width: 200px;
+            border: 2px solid grey;
+            border-radius: 3px;
+        }
+        .main{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .but{
+            height: 30px;
+            width: 90px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .error{
+            color: red;
+            padding-left: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <form class="main" name="myform" onsubmit="return validateform()" method="post">
+      <div class="formdesign" id="name">
+        Name: <input type="text" name="fname" class="css" required /><span class="error"><b></b></span>
+    </div>
+      <div class="formdesign" id="email">
+        Email: <input type="email" name="femail" class="css" required /><span class="error"><b></b></span>
+    </div>
+      <div class="formdesign" id="phone">
+        Phone: <input type="phone" name="fphone" class="css" required /><span class="error"><b></b></span>
+    </div>
+      <div class="formdesign" id="pwd">
+        Password: <input type="password" name="fpassword" class="css" required /><span class="error"><b></b></span>
+    </div>
+      <div class="formdesign" id="cpwd">
+        Confirm Password: <input type="cfpassword" name="fcpassword" class="css" required /><span class="error"><b></b></span>
+    </div>
+      <input type="submit" class="but" value="Submit">
+    </form>
+  </body>
+  <!-- -----------------------Javascript start from here ------------------------->
+  <script src="Javascript Validations.js">
+    
+  </script>
+</html>
